@@ -1100,6 +1100,8 @@ img {
 
 @media screen and (max-width: 767px) {
   .mobile-menu {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -1114,6 +1116,9 @@ img {
   }
   .mobile-menu.is-open {
     transform: translateX(0);
+  }
+  .mobile-nav {
+    flex-grow: 1;
   }
 }
 
@@ -1188,9 +1193,5 @@ img {
 .mobile-social__item:last-child {
   border: none;
   padding-right: 0;
-}
-
-.mobile-nav {
-  flex-grow: 1;
 }
 /*# sourceMappingURL=main.css.map */

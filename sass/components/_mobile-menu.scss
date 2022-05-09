@@ -27,6 +27,8 @@
 }
 @media screen and (max-width: 767px) {
   .mobile-menu {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -43,6 +45,10 @@
 
   .mobile-menu.is-open {
     transform: translateX(0);
+  }
+
+  .mobile-nav{
+    flex-grow: 1;
   }
 }
 @media screen and (min-width: 768px){
@@ -115,7 +121,4 @@
 .mobile-social__item:last-child {
   border: none;
   padding-right: 0;
-}
-.mobile-nav{
-  flex-grow: 1;
 }
