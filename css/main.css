@@ -1012,7 +1012,8 @@ img {
   height: 100%;
   transform: translateY(100%);
   justify-content: center;
-  padding: 49px 35px;
+  padding: 77px 24px;
+  overflow: scroll;
   font-size: 18px;
   line-height: 1.556;
   color: #ffffff;
@@ -1049,19 +1050,25 @@ img {
   }
   .project__card {
     margin: 15px;
-    flex-basis: calc((100% - 60px)/2);
+    flex-basis: calc((100% - 60px) / 2);
   }
   .project__card:last-child {
     margin-bottom: 0px;
+  }
+  .project__overlay {
+    padding: 49px 24px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .project__card {
-    flex-basis: calc((100% - 90px)/3);
+    flex-basis: calc((100% - 90px) / 3);
   }
   .project__card:last-child {
     margin-bottom: 30px;
+  }
+  .project__overlay {
+    padding: 49px 35px;
   }
 }
 
@@ -1161,7 +1168,7 @@ img {
 .mobile-social__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 48px;
+  margin: -5px;
 }
 
 .mobile-social__link {
@@ -1172,9 +1179,18 @@ img {
   color: #2196f3;
 }
 
-.mobile-social__item:not(:last-child) {
-  margin-right: 10px;
-  padding-right: 10px;
+.mobile-social__item {
+  margin: 5px;
+  padding: 0 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-social__item:last-child {
+  border: none;
+  padding-right: 0;
+}
+
+.mobile-nav {
+  flex-grow: 1;
 }
 /*# sourceMappingURL=main.css.map */
